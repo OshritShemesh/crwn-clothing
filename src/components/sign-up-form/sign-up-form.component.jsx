@@ -1,7 +1,7 @@
 import { useState } from "react";
 
 //components
-import FormInpot from "../form-input/form-input.component";
+import FormInput from "../form-input/form-input.component";
 import Button from "../button/button.component";
 
 //styles
@@ -65,11 +65,11 @@ const SignUpForm = () => {
 
   return (
     <div className="sign-up-container">
-      <h2>Don't have an account?</h2>
-      <span>Sign up with email and password</span>
+      <h2>I do not have an account</h2>
+      <span>Sign up with your email and password</span>
 
       <form onSubmit={handleSubmit}>
-        <FormInpot
+        <FormInput
           label="Display Name"
           type="text"
           required
@@ -78,7 +78,7 @@ const SignUpForm = () => {
           value={displayName}
         />
 
-        <FormInpot
+        <FormInput
           label="Email"
           type="email"
           required
@@ -87,7 +87,7 @@ const SignUpForm = () => {
           value={email}
         />
 
-        <FormInpot
+        <FormInput
           label="Password"
           type="password"
           required
@@ -96,7 +96,7 @@ const SignUpForm = () => {
           value={password}
         />
 
-        <FormInpot
+        <FormInput
           label="Confirm Password"
           type="password"
           required
