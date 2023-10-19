@@ -2,6 +2,7 @@
 import Navigation from "./components/routes/navigation/navigation.component";
 import Home from "./components/routes/home/home.component";
 import Authentication from "./components/routes/authentication/authentication.component";
+import Shop from "./components/routes/shop/shop.component";
 
 //router
 import { Routes, Route } from "react-router-dom";
@@ -20,4 +21,3 @@ const App = () => {
 
 export default App;
 
-const Shop = () => <h1>shop comp.</h1>;

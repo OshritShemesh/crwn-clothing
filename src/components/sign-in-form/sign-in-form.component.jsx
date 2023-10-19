@@ -43,7 +43,7 @@ const SignInForm = () => {
         email,
         password
       );
-      alert("signed in successfully");
+
       resetFormFields();
     } catch (error) {
       if (error.code == "auth/invalid-login-credentials")
@@ -54,7 +54,6 @@ const SignInForm = () => {
 
   const signInWithGoogleUser = async () => {
     const { user } = await signInWithGooglePopup();
-    const userDocRef = await createUserDocumentFromAuth(user);
   };
 
   return (
