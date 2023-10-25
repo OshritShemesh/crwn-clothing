@@ -5,7 +5,7 @@ import FormInput from "../form-input/form-input.component";
 import Button from "../button/button.component";
 
 //styles
-import "../sign-up-form/sign-up-form.styles.scss";
+import {SignUpContainer, Title } from "./sign-up-form.styles";
 
 import {
   createAuthUserWithEmailAndPassword,
@@ -64,8 +64,8 @@ const SignUpForm = () => {
   };
 
   return (
-    <div className="sign-up-container">
-      <h2>I do not have an account</h2>
+    <SignUpContainer>
+      <Title>I do not have an account</Title>
       <span>Sign up with your email and password</span>
 
       <form onSubmit={handleSubmit}>
@@ -107,7 +107,7 @@ const SignUpForm = () => {
 
         <Button type="submit">Sign Up</Button>
       </form>
-    </div>
+    </SignUpContainer>
   );
 };
 
