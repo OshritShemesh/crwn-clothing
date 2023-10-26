@@ -1,6 +1,6 @@
 import { useContext } from "react";
 
-import {ProductCardContainer, ImgStyle, ButtonStyle, Footer, Name, Price } from "./product-card.styles";
+import {ProductCardContainer, ImgStyle, Footer, Name, Price } from "./product-card.styles";
 
 import Button, {BUTTON_TYPE_CLASSES} from "../button/button.component";
 
